@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MovieGridActivity">
+    <item
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="Sort by"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/menu_sort_popularity"
+                android:orderInCategory="100"
+                android:title="@string/menu_popularity" />
+            <item
+                android:id="@+id/menu_sort_vote_average"
+                android:orderInCategory="101"
+                android:title="@string/menu_vote_average" />
+        </menu>
+
+    </item>
+
+</menu>
